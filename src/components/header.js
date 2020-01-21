@@ -1,51 +1,54 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+//import { FaGithub } from 'react-icons/fa';
 
 import './style.scss';
 
-import gatsbyLogo from '../images/gatsby-icon.png';
-import bulmaLogo from '../images/bulma-logo.png';
-import Navbar from './navbar';
+//import gatsbyLogo from '../images/gatsby-icon.png';
+//import bulmaLogo from '../images/bulma-logo.png';
+//import Navbar from './navbar';
 
 const Header = ({ siteTitle }) => (
-	<section className="hero gradientBg is-fullheight-with-navbar">
-		<Navbar />
-		<div className="hero-body">
+	<>
+		<section className='hero gradientBg is-fullheight'>
 			<div className="container center">
 				<article className="media">
-					<figure className="is-left">
-						<span className="icon is-large ">
-							<img src={gatsbyLogo} alt="gatsby-logo" />
-						</span>
-					</figure>
-					<figure className="is-left">
-						<span className="icon is-large">
-							<img src={bulmaLogo} alt="bulma-logo" />
-						</span>
-					</figure>
 					<div className="media-content">
-						<div className="content">
+						<div className="content has-text-centered">
 							<h1 className="is-uppercase is-size-1 has-text-white">
-								Hello from Bulma + Gatsby
+								Ivanov Dmitriy
 							</h1>
-							<p className="subtitle has-text-white is-size-3">
-								A Bulma CSS + GatsbyJS Starter Kit{' '}
-								<a
-									className="button is-info is-inverted"
-									href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-								>
-									<span className="icon">
-										<FaGithub size="fa-2x" />
-									</span>
-									<span>Download</span>
-								</a>
+							<p className="subtitle has-text-white is-size-4">
+								React
+								<span className="subtitle has-text-black is-size-4">
+									{' '}/{' '}
+									<span className="subtitle has-text-warning is-size-4">
+										JavaScript
+								 	</span>
+									{' '}developer
+								</span>
 							</p>
+							<div className='tags tech is-clearfix has-text-centered'>
+								<span class="tag is-black react">React</span>								
+								<span class="tag is-danger">Redux</span>
+								<span class="tag is-white">Redux Thunk</span>
+								<span class="tag is-success">React Router</span>
+								<span class="gatsby tag ">Gatsby</span> 
+								<br/>
+								<span class="tag is-info">React Native</span>
+								<span class="tag is-warning">JS</span>
+								<span class="tag is-danger">HTML5</span>
+								<span class="tag is-link">CSS/SCSS</span>
+								<span class="tag bootstarp">Bootstrap</span>
+								<span class="tag is-primary">Bulma</span>
+								<span class="tag is-warning">Firebase</span>																
+							</div>
 						</div>
 					</div>
 				</article>
 			</div>
-		</div>
-	</section>
+		</section>
+		
+	</>
 );
 
 export default Header;
