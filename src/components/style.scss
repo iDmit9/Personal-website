@@ -4,10 +4,20 @@
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
 
+//what for bitch you need auto scrolling?! 
+.media-content {
+	overflow-x: visible; 
+}
+
 .tech {
 	margin-top: 2.5rem;	
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
+}
+
+.hero .icon {
+	margin-top: 1rem;
+	margin-left: 0.5rem;
 }
 
 .tag1{

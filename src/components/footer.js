@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaTwitter, FaGithub, FaMedium } from 'react-icons/fa'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { StaticQuery, graphql } from 'gatsby'
 import './style.scss'
 import Emoji from './emoji'
@@ -12,8 +12,7 @@ const Footer = () => (
           siteMetadata {
             gatsby
             bulma
-            twitter
-            medium
+            linkedin
             github
           }
         }
@@ -33,8 +32,8 @@ const Footer = () => (
           </p>
           <article className='media center'>
             <span className='icon'>
-              <a href={data.site.siteMetadata.twitter}>
-                <FaTwitter size='fa-2x' color='blue' />
+              <a href={data.site.siteMetadata.linkedin}>
+                <FaLinkedin size='fa-2x' color='blue' />
               </a>
             </span>
             &nbsp;
@@ -42,13 +41,7 @@ const Footer = () => (
               <a href={data.site.siteMetadata.github}>
                 <FaGithub size='fa-2x' color='black' />
               </a>
-            </span>
-            &nbsp;
-            <span className='icon'>
-              <a href={data.site.siteMetadata.medium}>
-                <FaMedium size='fa-2x' color='green' />
-              </a>
-            </span>
+            </span>            
             &nbsp;
           </article>
           &nbsp;

@@ -1,13 +1,14 @@
 module.exports = {
 	siteMetadata: {
-		title: 'Gatsby Bulma Quickstart',
-		author: 'Aman Mittal',
+		title: 'Ivanov Dmitriy - React / JavaScript developer',
+		author: 'Ivanov Dmitriy',
 		imageUrl: 'https://i.imgur.com/Vz81GEl.png',
-		description: 'A Project to bootstrap your next Gatsby + Bulma site.',
-		keywords: `Web developer, Web, Developer, CSS, HTML, JS, Javascript, Gatsby, Bulma Developer, CSS3, HTML5, Seo, Starter`,
-		twitter: 'https://twitter.com/amanhimself',
-		github: `https://github.com/amandeepmittal`,
-		medium: 'https://medium.com/@amanhimself',
+		description: 'My web portfolio on Gatsby + Bulma.',
+		keywords: `React developer, React, Web, Developer, CSS, HTML, JS, Javascript, Gatsby, Web Developer, CSS3, SCSS, HTML5`,
+		//twitter: 'https://twitter.com/amanhimself',
+		github: `https://github.com/iDmit9`,
+		linkedin: `https://www.linkedin.com/in/dmitriy-react-dev/`,
+		// medium: 'https://medium.com/@amanhimself',
 		gatsby: 'https://www.gatsbyjs.org/',
 		bulma: 'https://bulma.io/',
 		siteUrl: `https://www.example.com`
