@@ -4,6 +4,7 @@ import './style.scss';
 import Helmet from './helmet';
 import Header from './header';
 import About from './about';
+import Portfolio from './portfolio';
 import Midsection from './midsection';
 import Footer from './footer';
 
@@ -12,6 +13,7 @@ const Layout = ({ children }) => (
 		<Helmet />
 		<Header />
 		<About />
+		<Portfolio />
 		<Midsection />
 		<Footer />
 	</div>

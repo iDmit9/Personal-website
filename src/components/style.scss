@@ -1,3 +1,4 @@
+$column-gap: 1rem;
 // Importing variables
 @import './variables.scss';
 
@@ -29,12 +30,54 @@
 	display: inline-block;
 }
 
+.portfolio .tag:not(body) {
+	height: 1.5em;
+	line-height: 1;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+.portfolio p {
+	line-height: 1.7;
+}
+
+.portfolio .view-code {
+	flex-grow: 3;
+}
+.portfolio .buttons {
+	margin-top: 0.7rem;
+}
+
+.portfolio .button {
+	line-height: 0.9;
+	padding-top: 0.3em;
+}
+
+.portfolio button .multiline {
+	line-height: 0.9;
+}
+
+.tag:not(body).express {
+	border: 1px solid #dbdbdb;
+}
+
+.tag:not(body).graphql {
+	background-color: #e535ab;
+	color: #000;
+}
+
+.tag:not(body).mongodb {
+	background-color: #000;
+	color: #13aa52;
+}
+
 .tag:not(body).gatsby {
 	background-color: #8a4baf;
 	color: #fff;
 }
 
-.tag:not(body).react {
+.tag:not(body).react {	
+	background-color: black;
 	color: #61dafb;
 }
 
