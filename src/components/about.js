@@ -1,15 +1,6 @@
 import React from 'react';
-// import {
-// 	FaSass,
-// 	FaHtml5,
-// 	FaReact,
-// 	FaMobileAlt,
-// 	FaRocket,
-// 	FaOsi
-// } from 'react-icons/fa';
 
 import './style.scss';
-// import Emoji from './emoji';
 
 const About = () => (
    <div>
@@ -46,7 +37,6 @@ const About = () => (
             </article>
          </div>
       </section>
-      <hr />
    </div>
 );
 

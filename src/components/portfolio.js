@@ -1,6 +1,12 @@
 import React from 'react';
- import { FaPlayCircle, FaGithub } from 'react-icons/fa'; //FaGlobe
+import { FaPlayCircle, FaGithub } from 'react-icons/fa'; 
 import './style.scss';
+
+import portfolioImg from '../images/card-portfolio.png';
+import emailyImg from '../images/card-emaily.png';
+import burgerImg from '../images/card-buter.png';
+import shoppingImg from '../images/card-shopping.png';
+import mealsImg from '../images/card-meals.png';
 
 const Portfolio = () => {
 
@@ -8,13 +14,15 @@ const Portfolio = () => {
       <>
          <section className="section portfolio">
             <div className="container">
+               <div className="content has-text-centered">
+                  <h2 className="title is-size-3 is-spaced">Portfolio</h2>
+               </div>
                <div class="columns is-multiline">
-
                   <div class="column is-12-mobile is-6-tablet is-4-desktop">
                      <div class="card">
                         <div class="card-image">
                            <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt=" " />
+                              <img src={portfolioImg} alt="personal website" />
                            </figure>
                         </div>
                         <div class="card-content">
@@ -29,12 +37,17 @@ const Portfolio = () => {
                               </p>
                               <div class="columns is-mobile is-multiline buttons">
                                  <div className='column is-mobile view-code' >
-                                    <button class="button is-medium ">
+                                    <a 
+                                       href='https://github.com/iDmit9/Personal-website' 
+                                       target="_blank" 
+                                       rel="noopener noreferrer"
+                                       class="button is-medium "
+                                    > 
                                        <span class="icon">
                                           <FaGithub size='fa-2x' color='black' />   
                                        </span>
                                        <p className='multiline'>View<br/>code</p>
-                                    </button>
+                                    </a>
                                  </div>
                               </div>
                            </div>
@@ -46,7 +59,7 @@ const Portfolio = () => {
                      <div class="card">
                         <div class="card-image">
                            <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder" />
+                              <img src={emailyImg} alt="Emaily app" />
                            </figure>
                         </div>
                         <div class="card-content">
@@ -67,21 +80,31 @@ const Portfolio = () => {
                               </p>
                               <div class="columns is-mobile is-multiline buttons">
                                  <div className='column is-mobile view-code' >
-                                    <button class="button is-medium ">
+                                    <a 
+                                       href='https://github.com/iDmit9/Personal-website' 
+                                       target="_blank" 
+                                       rel="noopener noreferrer"
+                                       class="button is-medium "
+                                    >
                                        <span class="icon">
                                           <FaGithub size='fa-2x' color='black' />   
                                        </span>
                                        <p className='multiline'>View<br/>code</p>
-                                    </button>
+                                    </a>
                                  </div>
                                  {/* <div className="column is-mobile"></div> */}
                                  <div className='column is-mobile' >
-                                    <button class="button is-medium ">
+                                    <a 
+                                       href='https://github.com/iDmit9/Personal-website' 
+                                       target="_blank" 
+                                       rel="noopener noreferrer"
+                                       class="button is-medium "
+                                    >
                                        <span class="icon">
                                           <FaPlayCircle size='fa-2x' color='black' />   
                                        </span>
-                                       <span className='multiline'>Live<br/>demo</span>
-                                    </button>
+                                       <span className='multiline'>Live<br/>app</span>
+                                    </a>
                                  </div>
                               </div>
                               {/* <br />
@@ -95,7 +118,7 @@ const Portfolio = () => {
                      <div class="card">
                         <div class="card-image">
                            <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt=" " />
+                              <img src={burgerImg} alt="Burger builder" />
                            </figure>
                         </div>
                         <div class="card-content">
@@ -111,21 +134,31 @@ const Portfolio = () => {
                               </p>
                               <div class="columns is-mobile is-multiline buttons">
                                  <div className='column is-mobile view-code' >
-                                    <button class="button is-medium ">
+                                    <a 
+                                       href='https://github.com/iDmit9/Personal-website' 
+                                       target="_blank" 
+                                       rel="noopener noreferrer"
+                                       class="button is-medium "
+                                    >
                                        <span class="icon">
                                           <FaGithub size='fa-2x' color='black' />   
                                        </span>
                                        <p className='multiline'>View<br/>code</p>
-                                    </button>
+                                    </a>
                                  </div>
                                  {/* <div className="column is-mobile"></div> */}
                                  <div className='column is-mobile' >
-                                    <button class="button is-medium ">
+                                    <a 
+                                       href='https://github.com/iDmit9/Personal-website' 
+                                       target="_blank" 
+                                       rel="noopener noreferrer"
+                                       class="button is-medium "
+                                    >
                                        <span class="icon">
                                           <FaPlayCircle size='fa-2x' color='black' />   
                                        </span>
-                                       <span className='multiline'>Live<br/>demo</span>
-                                    </button>
+                                       <span className='multiline'>Live<br/>app</span>
+                                    </a>
                                  </div>
                               </div>
                            </div>
@@ -138,7 +171,7 @@ const Portfolio = () => {
                      <div class="card">
                         <div class="card-image">
                            <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt=" " />
+                              <img src={shoppingImg} alt="Shopping app" />
                            </figure>
                         </div>
                         <div class="card-content">
@@ -155,12 +188,17 @@ const Portfolio = () => {
                               </p>
                               <div class="columns is-mobile is-multiline buttons">
                                  <div className='column is-mobile view-code' >
-                                    <button class="button is-medium ">
+                                    <a 
+                                       href='https://github.com/iDmit9/Personal-website' 
+                                       target="_blank" 
+                                       rel="noopener noreferrer"
+                                       class="button is-medium "
+                                    >
                                        <span class="icon">
                                           <FaGithub size='fa-2x' color='black' />   
                                        </span>
                                        <p className='multiline'>View<br/>code</p>
-                                    </button>
+                                    </a>
                                  </div>
                               </div>
                            </div>
@@ -172,7 +210,7 @@ const Portfolio = () => {
                      <div class="card">
                         <div class="card-image">
                            <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt=" " />
+                              <img src={mealsImg} alt=" " />
                            </figure>
                         </div>
                         <div class="card-content">
@@ -188,12 +226,17 @@ const Portfolio = () => {
                               </p>
                               <div class="columns is-mobile is-multiline buttons">
                                  <div className='column is-mobile view-code' >
-                                    <button class="button is-medium ">
+                                    <a 
+                                       href='https://github.com/iDmit9/Personal-website' 
+                                       target="_blank" 
+                                       rel="noopener noreferrer"
+                                       class="button is-medium "
+                                    >
                                        <span class="icon">
                                           <FaGithub size='fa-2x' color='black' />   
                                        </span>
                                        <p className='multiline'>View<br/>code</p>
-                                    </button>
+                                    </a>
                                  </div>
                               </div>
                            </div>
