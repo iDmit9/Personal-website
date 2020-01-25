@@ -16,21 +16,21 @@ const About = () => (
                         I know well: React and its surrounding technologies, pure JavaScript with ES6 syntax. 
                         I also have some knowledge related to Node, Express, Meteor, Next, GraphQL, Gatsby and others.</p>
                   </div>
-                  <div class="column is-half is-offset-one-quarter">
+                  <div className="column is-half is-offset-one-quarter">
                      <div className='tags tech is-clearfix has-text-centered center'>
-                        <span class="tag is-black react">React</span>
-                        <span class="tag is-danger">Redux</span>
-                        <span class="tag ">Redux Thunk</span>
-                        <span class="tag is-success">React Router</span>
-                        <span class="gatsby tag ">Gatsby</span>
+                        <span className="tag is-black react">React</span>
+                        <span className="tag is-danger">Redux</span>
+                        <span className="tag ">Redux Thunk</span>
+                        <span className="tag is-success">React Router</span>
+                        <span className="gatsby tag ">Gatsby</span>
                         <br />
-                        <span class="tag is-info">React Native</span>
-                        <span class="tag is-warning">JS</span>
-                        <span class="tag is-danger">HTML5</span>
-                        <span class="tag is-link">CSS/SCSS</span>
-                        <span class="tag bootstarp">Bootstrap</span>
-                        <span class="tag is-primary">Bulma</span>
-                        <span class="tag is-warning">Firebase</span>
+                        <span className="tag is-info">React Native</span>
+                        <span className="tag is-warning">JS</span>
+                        <span className="tag is-danger">HTML5</span>
+                        <span className="tag is-link">CSS/SCSS</span>
+                        <span className="tag bootstarp">Bootstrap</span>
+                        <span className="tag is-primary">Bulma</span>
+                        <span className="tag is-warning">Firebase</span>
                      </div>
                   </div>
                </div>

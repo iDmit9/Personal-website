@@ -5,7 +5,7 @@ import Helmet from './helmet';
 import Header from './header';
 import About from './about';
 import Portfolio from './portfolio';
-import Midsection from './midsection';
+import Contact from './contact';
 import Footer from './footer';
 
 const Layout = ({ children }) => (
@@ -14,7 +14,7 @@ const Layout = ({ children }) => (
 		<Header />
 		<About />
 		<Portfolio />
-		<Midsection />
+		<Contact />
 		<Footer />
 	</div>
 );
