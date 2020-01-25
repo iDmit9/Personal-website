@@ -59,6 +59,12 @@ const Contact = () => {
                <div className="content has-text-centered">
                   <h2 className="title is-size-3 is-spaced">Contact</h2>
                </div>
+               {/* <p className="subtitle is-size-5 has-text-centered">
+                  You can contact me on LinkedIn <br/>
+                  or <br/>
+                  wright me a message
+               </p> */}
+
                <form
                   onSubmit={submitForm}
                   action="https://formspree.io/mqkpvwzg"
