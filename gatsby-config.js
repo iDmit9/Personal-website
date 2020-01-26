@@ -2,7 +2,6 @@ module.exports = {
 	siteMetadata: {
 		title: 'Ivanov Dmitriy - React / JavaScript developer',
 		author: 'Ivanov Dmitriy',
-		imageUrl: 'https://i.imgur.com/Vz81GEl.png',
 		description: 'My web portfolio on Gatsby + Bulma.',
 		keywords: `React developer, React, Web, Developer, CSS, HTML, JS, Javascript, Gatsby, Web Developer, CSS3, SCSS, HTML5`,
 		github: `https://github.com/iDmit9`,
@@ -10,7 +9,7 @@ module.exports = {
 		gatsby: 'https://www.gatsbyjs.org/',
 		react: 'https://reactjs.org/',
 		bulma: 'https://bulma.io/',
-		siteUrl: `https://www.example.com`
+		siteUrl: `https://idmit9.now.sh/`
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',

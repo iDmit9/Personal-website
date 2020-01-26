@@ -10,20 +10,22 @@ $column-gap: 1rem;
 	overflow-x: visible; 
 }
 
+.icon-fa-2x {
+	font-size: 1.5em !important;
+}
+
 .tech {
 	margin-top: 2.5rem;	
 	margin-left: 1.5rem;
-	margin-right: 1.5rem;
+	margin-right: 1.5rem;	
+	max-width: 550px;
 }
 
-.hero .icon {
-	margin-top: 1rem;
-	margin-left: 0.5rem;
-}
-
-.tag1{
-	margin-left: auto;
-	margin-right: auto;
+.hero {
+	.icon {
+		margin-top: 1rem;
+		margin-left: 0.5rem;
+	}	
 }
 
 .tag{
@@ -34,41 +36,47 @@ section.portfolio {
 	background-color: #f5f5f5;
 }
 
-.portfolio .is-spaced,
-.contact .is-spaced{
-	margin-bottom: 4rem;;
+.portfolio, 
+.contact {
+	.is-spaced {		
+		margin-bottom: 4rem;
+	}
 }
 
-.portfolio .tag:not(body) {
-	height: 1.5em;
-	line-height: 1;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
+.portfolio {
+	.tag:not(body) {
+		height: 1.5em;
+		line-height: 1;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+
+	p {
+		line-height: 1.7;
+	}
+
+	.view-code {
+		flex-grow: 3;
+	}
+	.buttons {
+		margin-top: 0.7rem;
+	}
+
+	.button {
+		line-height: 0.9;
+		padding-top: 0.3em;
+
+		.multiline {
+			line-height: 0.9;
+		}
+	}
 }
 
-.portfolio p {
-	line-height: 1.7;
-}
-
-.portfolio .view-code {
-	flex-grow: 3;
-}
-.portfolio .buttons {
-	margin-top: 0.7rem;
-}
-
-.portfolio .button {
-	line-height: 0.9;
-	padding-top: 0.3em;
-}
-
-.portfolio .button .multiline {
-	line-height: 0.9;
-}
-
-.contact .container{
-	max-width: 850px;
-}
+.contact {
+	.container{
+		max-width: 850px;
+	}
+} 
 
 .tag:not(body).express {
 	border: 1px solid #dbdbdb;
@@ -86,6 +94,12 @@ section.portfolio {
 
 .tag:not(body).gatsby {
 	background-color: #8a4baf;
+	color: #fff;
+}
+
+
+.tag:not(body).react-nav {
+	background-color: #6b52ae;
 	color: #fff;
 }
 

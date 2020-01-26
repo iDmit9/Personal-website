@@ -20,10 +20,8 @@ const About = () => (
                      <div className='tags tech is-clearfix has-text-centered center'>
                         <span className="tag is-black react">React</span>
                         <span className="tag is-danger">Redux</span>
-                        <span className="tag ">Redux Thunk</span>
                         <span className="tag is-success">React Router</span>
                         <span className="gatsby tag ">Gatsby</span>
-                        <br />
                         <span className="tag is-info">React Native</span>
                         <span className="tag is-warning">JS</span>
                         <span className="tag is-danger">HTML5</span>

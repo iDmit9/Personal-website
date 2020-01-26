@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPlayCircle, FaGithub } from 'react-icons/fa'; 
+import { FaPlayCircle, FaGithub } from 'react-icons/fa';
 import './style.scss';
 
 import portfolioImg from '../images/card-portfolio.png';
@@ -17,7 +17,7 @@ const Portfolio = () => {
                <div className="content has-text-centered">
                   <h2 className="title is-size-3 is-spaced">Portfolio</h2>
                </div>
-               <div className="columns is-multiline">
+               <div className="columns is-multiline center">
                   <div className="column is-12-mobile is-6-tablet is-4-desktop">
                      <div className="card">
                         <div className="card-image">
@@ -30,23 +30,24 @@ const Portfolio = () => {
                               <p><span className="title is-4 is-capitalized">Portfolio</span></p>
                               <p>
                                  This is the website you are currently on.
-                                 This is my porfolio on <span className="tag is-medium gatsby">Gatsby</span>.
-                                 Built using technologies such as <span className="tag is-medium react">React</span>
-                                 , <span className="tag is-medium is-primary">Bulma</span>
-                                 , <span className="tag is-medium graphql">GraphQL</span>.
+                                 This is my porfolio on <span className="tag is-medium gatsby">Gatsby</span>
+                                 {' '}- it's framework based on <span className="tag is-medium react">React</span>.
+                                 Built using technologies such as <span className="tag is-medium is-primary">Bulma</span>
+                                 {' '}CSS framework 
+                                 and <span className="tag is-medium graphql">GraphQL</span>.
                               </p>
                               <div className="columns is-mobile is-multiline buttons">
                                  <div className='column is-mobile view-code' >
-                                    <a 
-                                       href='https://github.com/iDmit9/Personal-website' 
-                                       target="_blank" 
+                                    <a
+                                       href='https://github.com/iDmit9/Personal-website'
+                                       target="_blank"
                                        rel="noopener noreferrer"
                                        className="button is-medium "
-                                    > 
+                                    >
                                        <span className="icon">
-                                          <FaGithub size='fa-2x' color='black' />   
+                                          <FaGithub className='icon-fa-2x' color='black' />
                                        </span>
-                                       <p className='multiline'>View<br/>code</p>
+                                       <p className='multiline'>View<br />code</p>
                                     </a>
                                  </div>
                               </div>
@@ -70,40 +71,39 @@ const Portfolio = () => {
                                  Created as a fullstack JavaScript application
                                  on <span className="tag is-medium react">React</span> and <span className="tag is-medium is-success">Node</span>.
                                  With technologies like <span className="tag is-medium is-danger">Redux</span>
-                                 , <span className="tag is-medium is-success">React Router</span>
                                  , <span className="tag is-medium express">Express</span>
                                  , <span className="tag is-medium mongodb">MongoDB</span>.
                                  This application implements the ability to log in with Google oauth.
                                  To send Emails used SendGrid API and for charging the Stripe API is connected in test mode.
-                                 All received data is stored on mongodb.com and managed using the mongoose plugin
-                                 . <span className="tag is-medium bootstarp">Bootstrap</span> used for styling.
+                                 All received data is stored on mongodb.com and managed using the mongoose plugin. 
+                                 {' '}<span className="tag is-medium bootstarp">Bootstrap</span> used for styling.
                               </p>
                               <div className="columns is-mobile is-multiline buttons">
                                  <div className='column is-mobile view-code' >
-                                    <a 
-                                       href='https://github.com/iDmit9/Personal-website' 
-                                       target="_blank" 
+                                    <a
+                                       href='https://github.com/iDmit9/emaily'
+                                       target="_blank"
                                        rel="noopener noreferrer"
                                        className="button is-medium "
                                     >
                                        <span className="icon">
-                                          <FaGithub size='fa-2x' color='black' />   
+                                          <FaGithub className='icon-fa-2x' color='black' />
                                        </span>
-                                       <p className='multiline'>View<br/>code</p>
+                                       <p className='multiline'>View<br />code</p>
                                     </a>
                                  </div>
                                  {/* <div className="column is-mobile"></div> */}
                                  <div className='column is-mobile' >
-                                    <a 
-                                       href='https://github.com/iDmit9/Personal-website' 
-                                       target="_blank" 
+                                    <a
+                                       href='https://emaily-id.herokuapp.com/'
+                                       target="_blank"
                                        rel="noopener noreferrer"
                                        className="button is-medium "
                                     >
                                        <span className="icon">
-                                          <FaPlayCircle size='fa-2x' color='black' />   
+                                          <FaPlayCircle className='icon-fa-2x' color='black' />
                                        </span>
-                                       <span className='multiline'>Live<br/>app</span>
+                                       <span className='multiline'>Live<br />app</span>
                                     </a>
                                  </div>
                               </div>
@@ -130,34 +130,37 @@ const Portfolio = () => {
                                  Built using technologies such as <span className="tag is-medium is-danger">Redux</span>
                                  , <span className="tag is-medium is-success">React Router</span>.
                                  The application allows you to create a custom burger of four ingredients.
-                                 Started burger is loaded from the <span className="tag is-medium is-warning">Firebase</span>. To order you need to login which is implemented with firebase.
+                                 Started burger is loaded from the <span className="tag is-medium is-warning">Firebase</span>
+                                 . And your orders will be stored there.
+                                 To order you need to login and you also could signup which is implemented
+                                 with <span className="tag is-medium is-warning">Firebase</span> API.
                               </p>
                               <div className="columns is-mobile is-multiline buttons">
                                  <div className='column is-mobile view-code' >
-                                    <a 
-                                       href='https://github.com/iDmit9/Personal-website' 
-                                       target="_blank" 
+                                    <a
+                                       href='https://github.com/iDmit9/burger-builder'
+                                       target="_blank"
                                        rel="noopener noreferrer"
                                        className="button is-medium "
                                     >
                                        <span className="icon">
-                                          <FaGithub size='fa-2x' color='black' />   
+                                          <FaGithub className='icon-fa-2x' color='black' />
                                        </span>
-                                       <p className='multiline'>View<br/>code</p>
+                                       <p className='multiline'>View<br />code</p>
                                     </a>
                                  </div>
                                  {/* <div className="column is-mobile"></div> */}
                                  <div className='column is-mobile' >
-                                    <a 
-                                       href='https://github.com/iDmit9/Personal-website' 
-                                       target="_blank" 
+                                    <a
+                                       href='https://react-my-burger-f1737.web.app/'
+                                       target="_blank"
                                        rel="noopener noreferrer"
                                        className="button is-medium "
                                     >
                                        <span className="icon">
-                                          <FaPlayCircle size='fa-2x' color='black' />   
+                                          <FaPlayCircle className='icon-fa-2x' color='black' />
                                        </span>
-                                       <span className='multiline'>Live<br/>app</span>
+                                       <span className='multiline'>Live<br />app</span>
                                     </a>
                                  </div>
                               </div>
@@ -180,24 +183,27 @@ const Portfolio = () => {
                               <p><span className="title is-4 is-capitalized">Shopping app</span></p>
                               <p>
                                  This is a classic shopping app constructed with <span className="tag is-medium is-info">React Native</span>.
-                                 It has a list of goods, which is gradually loaded when scrolling using the FlatList component.
+                                 It has a list of goods, which is gradually loaded
+                                 from <span className="tag is-medium is-warning">Firebase</span> when scrolling using the FlatList component.
                                  You can open a detailed description of the product or add it to the cart.
                                  In the cart you can delete added products or place an order.
+                                 It stores in <span className="tag is-medium is-danger">Redux</span> before sending to db.
                                  To view orders use sidedrawer.
+                                 Navigation implemented with <span className="tag is-medium react-nav">React Navigation</span>.
                                  You can also add products or edit previously created.
                               </p>
                               <div className="columns is-mobile is-multiline buttons">
                                  <div className='column is-mobile view-code' >
-                                    <a 
-                                       href='https://github.com/iDmit9/Personal-website' 
-                                       target="_blank" 
+                                    <a
+                                       href='https://github.com/iDmit9/rn-shop-app'
+                                       target="_blank"
                                        rel="noopener noreferrer"
                                        className="button is-medium "
                                     >
                                        <span className="icon">
-                                          <FaGithub size='fa-2x' color='black' />   
+                                          <FaGithub className='icon-fa-2x' color='black' />
                                        </span>
-                                       <p className='multiline'>View<br/>code</p>
+                                       <p className='multiline'>View<br />code</p>
                                     </a>
                                  </div>
                               </div>
@@ -218,7 +224,7 @@ const Portfolio = () => {
                            <div className="content">
                               <p><span className="title is-4 is-capitalized">Meals app</span></p>
                               <p>
-                                 A simple mobile app using <span className="tag is-medium is-info">React Native</span> .
+                                 A simple mobile app using <span className="tag is-medium is-info">React Native</span>.
                                  The application is a small cookbook.
                                  The ingredients are divided into categories and each recipe can belong to several categories.
                                  Each recipe can be marked as a favorite.
@@ -226,16 +232,16 @@ const Portfolio = () => {
                               </p>
                               <div className="columns is-mobile is-multiline buttons">
                                  <div className='column is-mobile view-code' >
-                                    <a 
-                                       href='https://github.com/iDmit9/Personal-website' 
-                                       target="_blank" 
+                                    <a
+                                       href='https://github.com/iDmit9/The-meals-app'
+                                       target="_blank"
                                        rel="noopener noreferrer"
                                        className="button is-medium "
                                     >
                                        <span className="icon">
-                                          <FaGithub size='fa-2x' color='black' />   
+                                          <FaGithub className='icon-fa-2x' color='black' />
                                        </span>
-                                       <p className='multiline'>View<br/>code</p>
+                                       <p className='multiline'>View<br />code</p>
                                     </a>
                                  </div>
                               </div>

@@ -43,13 +43,14 @@ const Header = ({ siteTitle }) => {
 								<div className='center has-text-black'>
 										<span className='icon'>
 											<a href={data.site.siteMetadata.linkedin}>
-												<FaLinkedin size='fa-2x' color='black' />
+												<FaLinkedin className='icon-fa-2x' color='black' />
 											</a>
 										</span>
 										&nbsp;
            							 <span className='icon'>
 											<a href={data.site.siteMetadata.github}>
-												<FaGithub size='fa-2x' color='black' />
+											<FaGithub className='icon-fa-2x' color='black' /> 
+											{/*<FaGithub size='fa-2x' color='black' /> */}
 											</a>
 										</span>
 										&nbsp;
