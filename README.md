@@ -4,7 +4,7 @@ Hi, this is my personal site-porfolio. It was created with [Gatsby](https://www.
 
 > You can [view it](https://idmit9.now.sh/)
 
-![Portfolio previews](Capture-Emaily-surveys.png)
+![Portfolio previews](portfolio-screen.png)
 
 ### Features
 
