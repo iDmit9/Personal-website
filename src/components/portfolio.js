@@ -12,7 +12,7 @@ const Portfolio = () => {
 
    return (
       <>
-         <section className="section portfolio">
+         <section className="section portfolio" id="portfolio">
             <div className="container">
                <div className="content has-text-centered">
                   <h2 className="title is-size-3 is-spaced">Portfolio</h2>

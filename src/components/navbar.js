@@ -1,41 +1,44 @@
-import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+import React, {useState} from 'react';
 
 import './style.scss';
-import gatsbyLogo from '../images/gatsby-icon.png';
-import bulmaLogo from '../images/bulma-logo.png';
 
-const Navbar = () => (
-	<div className="hero-head is-hidden-mobile">
-		<nav className="navbar">
+const Navbar = () => {
+	const [isActive, setIsActive] = useState(false);
+
+	return (
+	<div className="hero-head">
+		 <nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
 			<div className="container">
 				<div className="navbar-brand">
-					<a
-						className="navbar-item"
-						href="/"
+					<button 
+						className={`button link-button navbar-burger burger ${isActive ? 'is-active' : ''}`}
+						aria-label="menu" 
+						aria-expanded="false" 
+						data-target="navbarMenuHeroA"
+						onClick={() => setIsActive(!isActive)}
 					>
-						<img src={gatsbyLogo} alt="Logo-1" />
-						<img src={bulmaLogo} alt="Logo-2" />
-					</a>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>						
+      				<span aria-hidden="true"></span>
+					</button>
 				</div>
-				<div id="navbarMenuHeroA" className="navbar-menu">
-					<div className="navbar-end">
-						<span className="navbar-item">
-							<a
-								className="button is-danger is-inverted"
-								href="https://github.com/iDmit9"
-							>
-								<span className="icon">
-									<FaGithub className='icon-fa-2x' />
-								</span>
-								<span>Download</span>
-							</a>
-						</span>
+				<div id="navbarMenuHeroA" className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
+					<div className="navbar-end has-text-centered">
+						<a href='#about' className="navbar-item">
+							About
+						</a>
+						<a href='#portfolio' className="navbar-item">
+							Portfolio
+						</a>
+						<a href="#contact" className="navbar-item">
+							Contact
+						</a>
 					</div>
 				</div>
 			</div>
-		</nav>
+		</nav> 
 	</div>
-);
+)
+}
 
 export default Navbar;

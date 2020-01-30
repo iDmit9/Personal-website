@@ -3,9 +3,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useStaticQuery, graphql } from 'gatsby';
 import './style.scss';
 
-//import gatsbyLogo from '../images/gatsby-icon.png';
-//import bulmaLogo from '../images/bulma-logo.png';
-//import Navbar from './navbar';
+import Navbar from './navbar';
 
 const Header = ({ siteTitle }) => {
 	const data = useStaticQuery(
@@ -21,8 +19,8 @@ const Header = ({ siteTitle }) => {
 		`
 	)
 	return (
-		<>
 			<section className='hero gradientBg is-fullheight'>
+				<Navbar />
 				<div className="container center">
 					<article className="media">
 						<div className="media-content">
@@ -61,7 +59,6 @@ const Header = ({ siteTitle }) => {
 					</article>
 				</div>
 			</section>
-		</>
 	)
 };
 

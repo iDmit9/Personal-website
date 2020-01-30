@@ -54,7 +54,7 @@ const Contact = () => {
 
    return (
       <>
-         <section className="section contact">
+         <section className="section contact" id='contact'>
             <div className="container">
                <div className="content has-text-centered">
                   <h2 className="title is-size-3 is-spaced">Contact</h2>
@@ -75,14 +75,14 @@ const Contact = () => {
                         <div className="field">
                            <div className="control is-expanded">
                               <input
-                                 className={`input is-medium ${checked && !name && 'is-danger'}`}
+                                 className={`input is-medium ${!!checked && !name && 'is-danger'}`}
                                  type="text"
                                  placeholder="Name"
                                  value={name}
                                  name="name"
                                  onChange={(event) => setName(event.target.value)}
                               />
-                              {checked && !name && (
+                              {!!checked && !name && (
                                  <p className="help is-danger">
                                     This field is required
                                  </p>
@@ -93,14 +93,14 @@ const Contact = () => {
                         <div className="field">
                            <div className='control is-expanded has-icons-right' >
                               <input
-                                 className={`input is-medium ${checked && (!email || !isValid) && 'is-danger'}`}
+                                 className={`input is-medium ${!!checked && (!email || !isValid) && 'is-danger'}`}
                                  type="email"
                                  placeholder="Email"
                                  value={email}
                                  name="_replyto"
                                  onChange={(event) => emailValidation(event)} 
                               />
-                              {checked && (
+                              {!!checked && (
                                  !email
                                     ? <p className="help is-danger">This field is required</p>
                                     : !isValid && <p className="help is-danger">This email is invalid</p>
@@ -115,7 +115,7 @@ const Contact = () => {
                         <div className="field">
                            <div className="control">
                               <textarea
-                                 className={`textarea is-medium ${checked && !message && 'is-danger'}`}
+                                 className={`textarea is-medium ${!!checked && !message && 'is-danger'}`}
                                  placeholder="Message"
                                  value={message}
                                  name="message"
@@ -123,7 +123,7 @@ const Contact = () => {
                               />
                            </div>
 
-                           {checked && !message && (
+                           {!!checked && !message && (
                               <p className="help is-danger">
                                  This field is required
                               </p>
@@ -149,7 +149,7 @@ const Contact = () => {
                      )
                   }
 
-                  {checked
+                  {!!checked
                      ? !sendStatus && <p className="help is-danger">please fill out the form</p>
                      : sendStatus === "ERROR" && <p className="help is-danger">Ooops! There was an error.</p>
                   }
