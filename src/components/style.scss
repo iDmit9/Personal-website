@@ -4,7 +4,7 @@
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
 
-//what for bitch you need auto scrolling?! 
+//why auto scrolling by default in gatsby?! 
 .media-content {
 	overflow-x: visible; 
 }
@@ -132,6 +132,15 @@ section.portfolio {
 .gradientBg {
 	display: flex;
 	background: linear-gradient(to right, $primary-color, $secondary-color);
+}
+
+.navbar-menu.is-active {
+	//background: $menu-bg;
+	background: transparent;
+}
+
+.is-active .navbar-end :not(:last-child) {
+	border-bottom: 1px solid #888;
 }
 
 .center {
