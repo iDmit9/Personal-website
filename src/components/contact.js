@@ -59,11 +59,6 @@ const Contact = () => {
                <div className="content has-text-centered">
                   <h2 className="title is-size-3 is-spaced">Contact</h2>
                </div>
-               {/* <p className="subtitle is-size-5 has-text-centered">
-                  You can contact me on LinkedIn <br/>
-                  or <br/>
-                  wright me a message
-               </p> */}
 
                <form
                   onSubmit={submitForm}
@@ -75,7 +70,7 @@ const Contact = () => {
                         <div className="field">
                            <div className="control is-expanded">
                               <input
-                                 className={`input is-medium ${!!checked && !name && 'is-danger'}`}
+                                 className={`input is-medium ${!checked ? '' : !name ? 'is-danger' : ''}`}
                                  type="text"
                                  placeholder="Name"
                                  value={name}
@@ -93,7 +88,7 @@ const Contact = () => {
                         <div className="field">
                            <div className='control is-expanded has-icons-right' >
                               <input
-                                 className={`input is-medium ${!!checked && (!email || !isValid) && 'is-danger'}`}
+                                 className={`input is-medium ${!checked ? '' : (!email || !isValid) ? 'is-danger' : ''}`}
                                  type="email"
                                  placeholder="Email"
                                  value={email}
@@ -115,7 +110,7 @@ const Contact = () => {
                         <div className="field">
                            <div className="control">
                               <textarea
-                                 className={`textarea is-medium ${!!checked && !message && 'is-danger'}`}
+                                 className={`textarea is-medium ${!checked ? '' : !message ? 'is-danger' : ''}`}
                                  placeholder="Message"
                                  value={message}
                                  name="message"
@@ -150,7 +145,9 @@ const Contact = () => {
                   }
 
                   {!!checked
-                     ? !sendStatus && <p className="help is-danger">please fill out the form</p>
+                     ? !sendStatus 
+                        && (!name || !email || !isValid || !message) 
+                        && <p className="help is-danger">please fill out the form</p>
                      : sendStatus === "ERROR" && <p className="help is-danger">Ooops! There was an error.</p>
                   }
 
