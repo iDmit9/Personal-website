@@ -129,6 +129,11 @@ section.portfolio {
 	color: #fff;
 }
 
+.tag:not(body).aws {
+	background-color: #ff9900;
+	color: #fff;
+}
+
 .gradientBg {
 	display: flex;
 	background: linear-gradient(to right, $primary-color, $secondary-color);

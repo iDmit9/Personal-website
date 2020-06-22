@@ -6,6 +6,7 @@ import portfolioImg from '../images/card-portfolio.png';
 import emailyImg from '../images/card-emaily.png';
 import burgerImg from '../images/card-buter.png';
 import shoppingImg from '../images/card-shopping.png';
+import AWSImg from '../images/card-aws2.png';
 import mealsImg from '../images/card-meals.png';
 
 const Portfolio = () => {
@@ -211,6 +212,56 @@ const Portfolio = () => {
                         </div>
                      </div>
                   </div>
+
+                  <div className="column is-12-mobile is-6-tablet is-4-desktop">
+                     <div className="card">
+                        <div className="card-image">
+                           <figure className="image is-4by3">
+                              <img src={AWSImg} alt="Shopping app" />
+                           </figure>
+                        </div>
+                        <div className="card-content">
+
+                           <div className="content">
+                              <p><span className="title is-4 is-capitalized">Amplify Market</span></p>
+                              {/* <p>
+                                 It's a serverless <span className="tag is-medium react">React</span> application
+                                 based on <span className="tag is-medium aws">AWS Amplify</span> and several other services.
+
+                                 This is a simple market in which most of the logic is built by Amazon services: <span className="tag is-medium aws">AWS Amplify</span>, 
+                                 which generates most <span className="tag is-medium graphql">GraphQL</span> queries and is responsible for authentication
+                                 , <span className="tag is-medium aws">Amazon Elasticsearch</span> for searching markets
+                                 , <span className="tag is-medium aws">AWS Lambda</span> for server functions and 
+                                 <span className="tag is-medium aws">Amazon SES</span> for sending confirmation emails.
+                              </p> */}
+                              <p>
+                                 It's a serverless <span className="tag is-medium react">React</span> marketplace.
+                                 based on <span className="tag is-medium aws">AWS Amplify</span> and several other services.
+                                 This is a simple market in which most of the logic is built by Amazon services. Not just AWS Amplify, 
+                                 which generates the majority of <span className="tag is-medium graphql">GraphQL</span> queries 
+                                 and is responsible for authentication and storing users data in Amazon Cognito User Pool.
+                                 But also services such as Amazon Elasticsearch, AWS Lambda, Amazon SES are used.
+                              </p>
+                              <div className="columns is-mobile is-multiline buttons">
+                                 <div className='column is-mobile view-code' >
+                                    <a
+                                       href='https://github.com/iDmit9/Marketplace-on-Amplify'
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       className="button is-medium "
+                                    >
+                                       <span className="icon">
+                                          <FaGithub className='icon-fa-2x' color='black' />
+                                       </span>
+                                       <p className='multiline'>View<br />code</p>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
 
                   <div className="column is-12-mobile is-6-tablet is-4-desktop">
                      <div className="card">
