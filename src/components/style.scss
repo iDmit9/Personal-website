@@ -134,6 +134,11 @@ section.portfolio {
 	color: #fff;
 }
 
+.tag:not(body).jest {
+	background-color: rgb(21, 194, 19);
+	color: rgb(237, 237, 237);
+}
+
 .gradientBg {
 	display: flex;
 	background: linear-gradient(to right, $primary-color, $secondary-color);
