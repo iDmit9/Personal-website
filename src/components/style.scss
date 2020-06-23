@@ -60,6 +60,15 @@ section.portfolio {
 }
 
 .portfolio {
+
+	.card {
+		margin-bottom: 2em;
+	}
+
+	.column {
+		padding: 0 1rem;
+	}
+
 	.tag:not(body) {
 		height: 1.5em;
 		line-height: 1;

@@ -18,8 +18,10 @@ const Portfolio = () => {
                <div className="content has-text-centered">
                   <h2 className="title is-size-3 is-spaced">Portfolio</h2>
                </div>
-               <div className="columns is-multiline center">
-                  <div className="column is-12-mobile is-6-tablet is-4-desktop">
+               <div className="columns">
+                  
+                  <div className="column is-12-mobile is-4-desktop">
+                     {/* col1 */}
                      <div className="card">
                         <div className="card-image">
                            <figure className="image is-4by3">
@@ -55,9 +57,50 @@ const Portfolio = () => {
                            </div>
                         </div>
                      </div>
+
+                     <div className="card">
+                        <div className="card-image">
+                           <figure className="image is-4by3">
+                              <img src={shoppingImg} alt="Shopping app" />
+                           </figure>
+                        </div>
+                        <div className="card-content">
+
+                           <div className="content">
+                              <p><span className="title is-4 is-capitalized">Shopping app</span></p>
+                              <p>
+                                 This is a classic shopping app constructed with <span className="tag is-medium is-info">React Native</span>.
+                                 It has a list of goods, which is gradually loaded
+                                 from <span className="tag is-medium is-warning">Firebase</span> when scrolling using the FlatList component.
+                                 You can open a detailed description of the product or add it to the cart.
+                                 In the cart you can delete added products or place an order.
+                                 It stores in <span className="tag is-medium is-danger">Redux</span> before sending to db.
+                                 To view orders use sidedrawer.
+                                 Navigation implemented with <span className="tag is-medium react-nav">React Navigation</span>.
+                                 You can also add products or edit previously created.
+                              </p>
+                              <div className="columns is-mobile is-multiline buttons">
+                                 <div className='column is-mobile view-code' >
+                                    <a
+                                       href='https://github.com/iDmit9/rn-shop-app'
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       className="button is-medium "
+                                    >
+                                       <span className="icon">
+                                          <FaGithub className='icon-fa-2x' color='black' />
+                                       </span>
+                                       <p className='multiline'>View<br />code</p>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
 
-                  <div className="column is-12-mobile is-6-tablet is-4-desktop">
+                  <div className="column is-12-mobile  is-4-desktop">
+                     {/* col2 */}
                      <div className="card">
                         <div className="card-image">
                            <figure className="image is-4by3">
@@ -113,9 +156,47 @@ const Portfolio = () => {
                            </div>
                         </div>
                      </div>
+
+                     <div className="card">
+                        <div className="card-image">
+                           <figure className="image is-4by3">
+                              <img src={AWSImg} alt="Shopping app" />
+                           </figure>
+                        </div>
+                        <div className="card-content">
+
+                           <div className="content">
+                              <p><span className="title is-4 is-capitalized">Amplify Market</span></p>
+                              <p>
+                                 It's a serverless <span className="tag is-medium react">React</span> marketplace 
+                                 based on <span className="tag is-medium aws">AWS Amplify</span> and several other services.
+                                 This is a simple market in which most of the logic is built by Amazon services. Not just AWS Amplify, 
+                                 which generates the majority of <span className="tag is-medium graphql">GraphQL</span> queries 
+                                 and is responsible for authentication and storing users data in Amazon Cognito User Pool.
+                                 But also services such as Amazon Elasticsearch, AWS Lambda, Amazon SES are used.
+                              </p>
+                              <div className="columns is-mobile is-multiline buttons">
+                                 <div className='column is-mobile view-code' >
+                                    <a
+                                       href='https://github.com/iDmit9/Marketplace-on-Amplify'
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       className="button is-medium "
+                                    >
+                                       <span className="icon">
+                                          <FaGithub className='icon-fa-2x' color='black' />
+                                       </span>
+                                       <p className='multiline'>View<br />code</p>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
 
-                  <div className="column is-12-mobile is-6-tablet is-4-desktop">
+                  <div className="column is-12-mobile  is-4-desktop">
+                     {/* col3 */}
                      <div className="card">
                         <div className="card-image">
                            <figure className="image is-4by3">
@@ -168,102 +249,7 @@ const Portfolio = () => {
                            </div>
                         </div>
                      </div>
-                  </div>
-                  {/* <div className="card is-shadowless is-slightly-rounded"> */}
 
-                  <div className="column is-12-mobile is-6-tablet is-4-desktop">
-                     <div className="card">
-                        <div className="card-image">
-                           <figure className="image is-4by3">
-                              <img src={shoppingImg} alt="Shopping app" />
-                           </figure>
-                        </div>
-                        <div className="card-content">
-
-                           <div className="content">
-                              <p><span className="title is-4 is-capitalized">Shopping app</span></p>
-                              <p>
-                                 This is a classic shopping app constructed with <span className="tag is-medium is-info">React Native</span>.
-                                 It has a list of goods, which is gradually loaded
-                                 from <span className="tag is-medium is-warning">Firebase</span> when scrolling using the FlatList component.
-                                 You can open a detailed description of the product or add it to the cart.
-                                 In the cart you can delete added products or place an order.
-                                 It stores in <span className="tag is-medium is-danger">Redux</span> before sending to db.
-                                 To view orders use sidedrawer.
-                                 Navigation implemented with <span className="tag is-medium react-nav">React Navigation</span>.
-                                 You can also add products or edit previously created.
-                              </p>
-                              <div className="columns is-mobile is-multiline buttons">
-                                 <div className='column is-mobile view-code' >
-                                    <a
-                                       href='https://github.com/iDmit9/rn-shop-app'
-                                       target="_blank"
-                                       rel="noopener noreferrer"
-                                       className="button is-medium "
-                                    >
-                                       <span className="icon">
-                                          <FaGithub className='icon-fa-2x' color='black' />
-                                       </span>
-                                       <p className='multiline'>View<br />code</p>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div className="column is-12-mobile is-6-tablet is-4-desktop">
-                     <div className="card">
-                        <div className="card-image">
-                           <figure className="image is-4by3">
-                              <img src={AWSImg} alt="Shopping app" />
-                           </figure>
-                        </div>
-                        <div className="card-content">
-
-                           <div className="content">
-                              <p><span className="title is-4 is-capitalized">Amplify Market</span></p>
-                              {/* <p>
-                                 It's a serverless <span className="tag is-medium react">React</span> application
-                                 based on <span className="tag is-medium aws">AWS Amplify</span> and several other services.
-
-                                 This is a simple market in which most of the logic is built by Amazon services: <span className="tag is-medium aws">AWS Amplify</span>, 
-                                 which generates most <span className="tag is-medium graphql">GraphQL</span> queries and is responsible for authentication
-                                 , <span className="tag is-medium aws">Amazon Elasticsearch</span> for searching markets
-                                 , <span className="tag is-medium aws">AWS Lambda</span> for server functions and 
-                                 <span className="tag is-medium aws">Amazon SES</span> for sending confirmation emails.
-                              </p> */}
-                              <p>
-                                 It's a serverless <span className="tag is-medium react">React</span> marketplace.
-                                 based on <span className="tag is-medium aws">AWS Amplify</span> and several other services.
-                                 This is a simple market in which most of the logic is built by Amazon services. Not just AWS Amplify, 
-                                 which generates the majority of <span className="tag is-medium graphql">GraphQL</span> queries 
-                                 and is responsible for authentication and storing users data in Amazon Cognito User Pool.
-                                 But also services such as Amazon Elasticsearch, AWS Lambda, Amazon SES are used.
-                              </p>
-                              <div className="columns is-mobile is-multiline buttons">
-                                 <div className='column is-mobile view-code' >
-                                    <a
-                                       href='https://github.com/iDmit9/Marketplace-on-Amplify'
-                                       target="_blank"
-                                       rel="noopener noreferrer"
-                                       className="button is-medium "
-                                    >
-                                       <span className="icon">
-                                          <FaGithub className='icon-fa-2x' color='black' />
-                                       </span>
-                                       <p className='multiline'>View<br />code</p>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-
-
-                  <div className="column is-12-mobile is-6-tablet is-4-desktop">
                      <div className="card">
                         <div className="card-image">
                            <figure className="image is-4by3">
@@ -300,6 +286,7 @@ const Portfolio = () => {
                         </div>
                      </div>
                   </div>
+                  {/* <div className="card is-shadowless is-slightly-rounded"> */}                  
 
                </div>
             </div>
