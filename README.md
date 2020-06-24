@@ -8,8 +8,8 @@ Hi, this is my personal site-porfolio. It was created with [Gatsby](https://www.
 
 ### Features
 
-- Gatsby v2
-- React 16.12
+- Gatsby 
+- React 
 - Bulma CSS
 - Responsive design
 - SCSS
