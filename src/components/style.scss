@@ -60,7 +60,6 @@ section.portfolio {
 }
 
 .portfolio {
-
 	.card {
 		margin-bottom: 2em;
 	}
@@ -104,48 +103,79 @@ section.portfolio {
 } 
 
 .tag:not(body) {	
-	&.express {
-		border: 1px solid #dbdbdb;
+	background-color: transparent;
+	color: #000;
+	border: 1px solid;
+
+	//colors similar to official
+
+	&.bulma {
+		border-color: $primary;
 	}
 
-	&.graphql {
-		background-color: #e535ab;
-		color: #000;
+	&.react-native {
+		border-color: $info;
+	}	
+
+	&.firebase,
+	&.js {
+		border-color: $warning;
+	}	
+
+	&.redux,
+	&.html {
+		border-color: $danger;
+	}	
+
+	&.node,
+	&.react-router {
+		border-color: $success;
+	}	
+
+	&.css {
+		border-color: $link;
+	}	
+
+	&.css {
+		border-color: $link;
+	}	
+
+	//colors from official websites
+
+	&.express {
+		border-color: #dbdbdb;
+	}
+
+	&.graphql {		
+		border-color: #e535ab;
 	}	
 
 	&.mongodb {
-		background-color: #000;
-		color: #13aa52;
+		border-color: #13aa52;
 	}	
 
 	&.gatsby {
-		background-color: #8a4baf;
-		color: #fff;
+		border-color: #8a4baf;
 	}	
 
 	&.react-nav {
-		background-color: #6b52ae;
-		color: #fff;
+		border-color: #6b52ae;
 	}	
 
 	&.react {	
-		background-color: black;
-		color: #61dafb;
+		border-color: #61dafb;
 	}	
 	
 	&.bootstarp {
-		background-color: #7952b3;
-		color: #fff;
+		border-color: #7952b3;
 	}
 
 	&.aws {
-		background-color: #ff9900;
-		color: #fff;
+		border-color: #ff9900;
 	}
 
 	&.jest {
-		background-color: rgb(21, 194, 19);
-		color: rgb(237, 237, 237);
+		border-color: rgb(21, 194, 19);
 	}
 }
 
