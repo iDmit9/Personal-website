@@ -31,7 +31,7 @@
 }
 
 .tech {
-	margin-top: 2.5rem;	
+	margin-top: 1.5rem;	
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;	
 	max-width: 550px;
@@ -103,49 +103,50 @@ section.portfolio {
 	}
 } 
 
-.tag:not(body).express {
-	border: 1px solid #dbdbdb;
-}
+.tag:not(body) {	
+	&.express {
+		border: 1px solid #dbdbdb;
+	}
 
-.tag:not(body).graphql {
-	background-color: #e535ab;
-	color: #000;
-}
+	&.graphql {
+		background-color: #e535ab;
+		color: #000;
+	}	
 
-.tag:not(body).mongodb {
-	background-color: #000;
-	color: #13aa52;
-}
+	&.mongodb {
+		background-color: #000;
+		color: #13aa52;
+	}	
 
-.tag:not(body).gatsby {
-	background-color: #8a4baf;
-	color: #fff;
-}
+	&.gatsby {
+		background-color: #8a4baf;
+		color: #fff;
+	}	
 
+	&.react-nav {
+		background-color: #6b52ae;
+		color: #fff;
+	}	
 
-.tag:not(body).react-nav {
-	background-color: #6b52ae;
-	color: #fff;
-}
+	&.react {	
+		background-color: black;
+		color: #61dafb;
+	}	
+	
+	&.bootstarp {
+		background-color: #7952b3;
+		color: #fff;
+	}
 
-.tag:not(body).react {	
-	background-color: black;
-	color: #61dafb;
-}
+	&.aws {
+		background-color: #ff9900;
+		color: #fff;
+	}
 
-.tag:not(body).bootstarp {
-	background-color: #7952b3;
-	color: #fff;
-}
-
-.tag:not(body).aws {
-	background-color: #ff9900;
-	color: #fff;
-}
-
-.tag:not(body).jest {
-	background-color: rgb(21, 194, 19);
-	color: rgb(237, 237, 237);
+	&.jest {
+		background-color: rgb(21, 194, 19);
+		color: rgb(237, 237, 237);
+	}
 }
 
 .gradientBg {
@@ -154,7 +155,6 @@ section.portfolio {
 }
 
 .navbar-menu.is-active {
-	//background: $menu-bg;
 	background: transparent;
 }
 
@@ -181,10 +181,9 @@ section.portfolio {
 	}
 }
 
-@media screen and (max-width: 1024px) { //min-width: 769px
+@media screen and (max-width: 1024px) {
 	.navbar {
 		.container {
-			//max-width: 705px;
 			margin-right: 1.5rem;
 		}
 	} 

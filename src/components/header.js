@@ -48,7 +48,6 @@ const Header = ({ siteTitle }) => {
            							 <span className='icon'>
 											<a href={data.site.siteMetadata.github}>
 											<FaGithub className='icon-fa-2x' color='black' /> 
-											{/*<FaGithub size='fa-2x' color='black' /> */}
 											</a>
 										</span>
 										&nbsp;

@@ -12,20 +12,20 @@ import mealsImg from '../../images/card-meals.png';
 
 const Portfolio = () => {
 
-   const gatsby = <span className="tag is-medium gatsby">Gatsby</span>;
-   const react = <span className="tag is-medium react">React</span>;
-   const bulma = <span className="tag is-medium is-primary">Bulma</span>;
-   const graphql = <span className="tag is-medium graphql">GraphQL</span>;
-   const reactNative = <span className="tag is-medium is-info">React Native</span>;
-   const firebase = <span className="tag is-medium is-warning">Firebase</span>;
-   const redux = <span className="tag is-medium is-danger">Redux</span>;
+   const gatsby =       <span className="tag is-medium gatsby">Gatsby</span>;
+   const react =        <span className="tag is-medium react">React</span>;
+   const bulma =        <span className="tag is-medium is-primary">Bulma</span>;
+   const graphql =      <span className="tag is-medium graphql">GraphQL</span>;
+   const reactNative =  <span className="tag is-medium is-info">React Native</span>;
+   const firebase =     <span className="tag is-medium is-warning">Firebase</span>;
+   const redux =        <span className="tag is-medium is-danger">Redux</span>;
    const reactNavigation = <span className="tag is-medium react-nav">React Navigation</span>;
-   const node = <span className="tag is-medium is-success">Node</span>;   
-   const express = <span className="tag is-medium express">Express</span>;
-   const mongo = <span className="tag is-medium mongodb">MongoDB</span>;
-   const bootstrap = <span className="tag is-medium bootstarp">Bootstrap</span>;
-   const amplify = <span className="tag is-medium aws">AWS Amplify</span>;
-   const reactRouter = <span className="tag is-medium is-success">React Router</span>;
+   const node =         <span className="tag is-medium is-success">Node</span>;   
+   const express =      <span className="tag is-medium express">Express</span>;
+   const mongo =        <span className="tag is-medium mongodb">MongoDB</span>;
+   const bootstrap =    <span className="tag is-medium bootstarp">Bootstrap</span>;
+   const amplify =      <span className="tag is-medium aws">AWS Amplify</span>;
+   const reactRouter =  <span className="tag is-medium is-success">React Router</span>;
 
    const githubPortfolio = 'https://github.com/iDmit9/Personal-website';
    const githubShoppingApp = 'https://github.com/iDmit9/rn-shop-app';
