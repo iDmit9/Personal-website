@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaPlayCircle, FaGithub } from 'react-icons/fa';
 import '../style.scss';
+
+import PortfolioButton from './portfolio-button';
 
 const PortfolioItem = ({ img, title, codeLink, liveLink, children }) => {
    return (
@@ -15,34 +16,8 @@ const PortfolioItem = ({ img, title, codeLink, liveLink, children }) => {
                <p><span className="title is-4 is-capitalized">{title}</span></p>
                <p>{children}</p>
                <div className="columns is-mobile is-multiline buttons">
-                  <div className='column is-mobile view-code' >
-                     <a
-                        href={codeLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="button is-medium "
-                     >
-                        <span className="icon">
-                           <FaGithub className='icon-fa-2x' color='black' />
-                        </span>
-                        <p className='multiline'>View<br />code</p>
-                     </a>
-                  </div>
-                  {liveLink &&
-                     <div className='column is-mobile' >
-                        <a
-                           href={liveLink}
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           className="button is-medium "
-                        >
-                           <span className="icon">
-                              <FaPlayCircle className='icon-fa-2x' color='black' />
-                           </span>
-                           <span className='multiline'>Live<br />app</span>
-                        </a>
-                     </div>
-                  }
+                  <PortfolioButton link={codeLink} type='code' />
+                  {liveLink && <PortfolioButton link={liveLink} type='live' />}
                </div>
             </div>
          </div>

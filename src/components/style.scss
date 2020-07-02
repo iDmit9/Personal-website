@@ -79,11 +79,14 @@ section.portfolio {
 		line-height: 1.7;
 	}
 
-	.view-code {
-		flex-grow: 3;
-	}
 	.buttons {
 		margin-top: 0.7rem;
+
+		div:first-child {
+			flex-grow: 3;
+		}
+
+		padding-bottom: 0.5rem;
 	}
 
 	.button {
