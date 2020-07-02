@@ -1,14 +1,13 @@
 import React from 'react';
-import '../style.scss';
 
 import PortfolioButton from './portfolio-button';
 
-const PortfolioItem = ({ img, title, codeLink, liveLink, children }) => {
+const PortfolioItem = ({ img, alt, title, codeLink, liveLink, children }) => {
    return (
       <div className="card">
          <div className="card-image">
             <figure className="image is-4by3">
-               <img src={img} alt="personal website" />
+               <img src={img} alt={alt} />
             </figure>
          </div>
          <div className="card-content">

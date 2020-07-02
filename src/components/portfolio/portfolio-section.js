@@ -49,18 +49,18 @@ const Portfolio = () => {
                   <div className="column is-12-mobile is-4-desktop">
                      <PortfolioItem
                         img={portfolioImg}
+                        alt="personal website"
                         title='Portfolio'
                         codeLink={githubPortfolio}
                      >
                         This is the website you are currently on.
-                        This is my porfolio on {gatsby}
-                        {' '}- it's framework based on {react}.
-                        Built using technologies such as {bulma}
-                        {' '}CSS framework and {graphql}.
+                        This is my porfolio on {gatsby} - it's framework based on {react}.
+                        Built using technologies such as {bulma} CSS framework and {graphql}.
                      </PortfolioItem>  
 
                      <PortfolioItem
                         img={shoppingImg}
+                        alt="React Native Shopping app"
                         title='Shopping app'
                         codeLink={githubShoppingApp}
                      >
@@ -79,6 +79,7 @@ const Portfolio = () => {
                   <div className="column is-12-mobile  is-4-desktop">
                      <PortfolioItem
                         img={emailyImg}
+                        alt="MERN Emaily web-app"
                         title='Emaily'
                         codeLink={githubEmaily}
                         liveLink={liveEmaily}
@@ -90,12 +91,13 @@ const Portfolio = () => {
                         , {express}, {mongo}.
                         This application implements the ability to log in with Google oauth.
                         To send Emails used SendGrid API and for charging the Stripe API is connected in test mode.
-                        All received data is stored on mongodb.com and managed using the mongoose plugin.
-                        {' '}{bootstrap} used for styling.
+                        All received data is stored on mongodb.com and 
+                        managed using the mongoose plugin. {bootstrap} used for styling.
                      </PortfolioItem> 
 
                      <PortfolioItem
                         img={AWSImg}
+                        alt="AWS Amplify React Marketplace"
                         title='Amplify Market'
                         codeLink={githubAWS}
                      >
@@ -110,7 +112,8 @@ const Portfolio = () => {
 
                   <div className="column is-12-mobile  is-4-desktop">
                      <PortfolioItem
-                        img={burgerImg}
+                        img={burgerImg}                        
+                        alt="Burger Builder web-app"
                         title='Burger Builder'
                         codeLink={githubBurger}
                         liveLink={liveBurger}
@@ -125,7 +128,8 @@ const Portfolio = () => {
                      </PortfolioItem>  
 
                      <PortfolioItem
-                        img={mealsImg}
+                        img={mealsImg}                        
+                        alt="React Native Meals Application"
                         title='Meals app'
                         codeLink={githubMealsApp}
                      >

@@ -14,9 +14,9 @@ const About = () => (
                         
                         Hello, I have been developing software for more than 4 years.
                         And now I'm looking for a job as an experienced junior Javascript/React developer. 
-                        Junior because there is no significant experience in web development. 
+                        Junior because there is no significant experience in big projects in web development. 
                         And experienced because I practiced a lot in Javascript and React, part of my code can be viewed on GitHub.
-                        I practiced not only React, but everything that can work with it: Node, Next, Electron, 
+                        I practiced not only React, but everything that can work with it: Node, Express, Next, React Native, Gatsby, 
                         various serverless cloud solutions and APIs (AWS, Firebase, SendGrid).
                         Plus I previously worked in development on 1C:Enterprise (based on Visual Basic and SQL). 
                         

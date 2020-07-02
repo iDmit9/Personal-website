@@ -5,7 +5,7 @@ import './style.scss';
 
 import Navbar from './navbar';
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
 	const data = useStaticQuery(
 		graphql`
 			query {
