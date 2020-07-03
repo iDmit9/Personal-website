@@ -214,6 +214,30 @@ section.portfolio {
 	}
 }
 
+.not-found {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1rem;
+	
+	h1 {
+		font-size: 7rem;		
+	}
+
+	p {		
+		display: block;
+	}
+
+	a {
+		border-bottom: 1px solid;
+		color: black;
+	}
+
+	a:hover {
+		color: $warning;
+	}
+}
+
 @media screen and (max-width: 1024px) {
 	.navbar {
 		.container {

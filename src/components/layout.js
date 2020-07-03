@@ -8,7 +8,7 @@ import Portfolio from './portfolio/portfolio-section';
 import Contact from './contact';
 import Footer from './footer';
 
-const Layout = ({ children }) => (
+const Layout = () => (
 	<div>
 		<Helmet />
 		<Header />
