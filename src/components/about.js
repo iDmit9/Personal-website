@@ -4,21 +4,21 @@ import './style.scss';
 
 const About = () => (
    <div>
-      <section className="section" id='about'>
+      <section className="section about" id='about'>
          <div className="container center">
             <article className="media">
                <div className="media-content">
                   <div className="content has-text-centered">
                      <h2 className="title is-size-3 is-spaced">About</h2>
-                     <p className="subtitle is-size-5 column is-three-fifths is-offset-one-fifth">
+                     <p className="subtitle is-size-5 column has-text-left is-three-fifths is-offset-one-fifth">
                         
-                        Hello, I have been developing software for more than 4 years.
-                        And now I'm looking for a job as an experienced junior Javascript/React developer. 
-                        Junior because there is no significant experience in big projects in web development. 
-                        And experienced because I practiced a lot in Javascript and React, part of my code can be viewed on GitHub.
-                        I practiced not only React, but everything that can work with it: Node, Express, Next, React Native, Gatsby, 
-                        various serverless cloud solutions and APIs (AWS, Firebase, SendGrid).
-                        Plus I previously worked in development on 1C:Enterprise (based on Visual Basic and SQL). 
+                        Hello, I'm looking for a job as a Javascript/React developer with small experience.
+                        I practiced a lot not only React, but everything that can work with it:
+                        Node, Express, Next, React Native, Gatsby, various serverless cloud solutions and APIs (AWS, Firebase, SendGrid). 
+                        Part of my code can be viewed on GitHub.
+                        And I've been developing software for more than 4 years.
+                        I previously worked in development on 1C:Enterprise.
+                        Some of the technologies I've worked with are listed below.
                         
                      </p>
                   </div>
