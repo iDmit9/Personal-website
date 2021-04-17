@@ -21,14 +21,15 @@ const About = () => (
                         
                      </p>
                   </div>
-                  <div className="column is-half is-offset-one-quarter">
+                  <div className="column is-half is-offset-one-quarter center">
                      <div className='tags tech is-clearfix has-text-centered center'>
                         <span className="tag react">React</span>
                         <span className="tag redux">Redux</span>
                         <span className="tag react-router">React Router</span>
                         <span className="tag gatsby">Gatsby</span>
                         <span className="tag react-native">React Native</span>
-                        <span className="tag js">JS</span>
+                        <span className="tag ts">TypeScript</span>
+                        <span className="tag js">JavaScript</span>
                         <span className="tag html">HTML5</span>
                         <span className="tag css">CSS/SCSS</span>
                         <span className="tag bootstarp">Bootstrap</span>
