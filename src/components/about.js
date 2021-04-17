@@ -14,11 +14,10 @@ const About = () => (
                         
                         Hello, I'm looking for a job as a Javascript/React developer with small experience.
                         I practiced a lot not only React, but everything that can work with it:
-                        Node, Express, Next, React Native, Gatsby, various serverless cloud solutions and APIs (AWS, Firebase, SendGrid). 
+                        Node, Express, Next, React Native, Gatsby, various serverless cloud solutions and APIs (AWS, Firebase, SendGrid, etc.). 
                         Part of my code can be viewed on GitHub.
-                        And I've been developing software for more than 4 years.
-                        I previously worked in development on 1C:Enterprise.
-                        Some of the technologies I've worked with are listed below.
+                        I previously worked in software development on 1C:Enterprise.
+                        Some of the technologies I have experience with are listed below.
                         
                      </p>
                   </div>
