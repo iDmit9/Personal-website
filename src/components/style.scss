@@ -4,7 +4,6 @@
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
 
-//why auto scrolling by default in gatsby?! 
 .media-content {
 	overflow-x: visible; 
 }
@@ -30,13 +29,6 @@
 	font-size: 1.5em !important;
 }
 
-.tech {
-	margin-top: 1.5rem;	
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;	
-	max-width: 550px;
-}
-
 .hero {
 	.icon {
 		margin-top: 1rem;
@@ -44,9 +36,25 @@
 	}	
 }
 
-.about p {
-	text-indent: 2rem;
-}
+.about {
+	p {
+		text-indent: 2rem;
+	}
+
+	.tags {
+		&.tech {
+			margin-top: 0.5rem;	
+			margin-left: 1.5rem;
+			margin-right: 1.5rem;
+			max-width: 550px;
+		}
+
+		.tag {
+			margin-left: 0.25rem;
+			margin-right: 0.25rem;
+		}
+	}
+} 
 
 .tag{
 	display: inline-block;
@@ -65,7 +73,7 @@ section.portfolio {
 
 .portfolio {
 	.card {
-		margin-bottom: 2em;
+		margin-bottom: 2rem;
 	}
 
 	.column {
@@ -73,10 +81,10 @@ section.portfolio {
 	}
 
 	.tag:not(body) {
-		height: 1.5em;
+		height: 1.5rem;
 		line-height: 1;
-		padding-left: 0.5em;
-		padding-right: 0.5em;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
 	}
 
 	p {
@@ -85,9 +93,11 @@ section.portfolio {
 
 	.buttons {
 		margin-top: 0.7rem;
+		display: flex;
+		justify-content: space-between;
 
-		div:first-child {
-			flex-grow: 3;
+		.column {
+			flex-grow: unset;
 		}
 
 		padding-bottom: 0.5rem;
@@ -95,7 +105,7 @@ section.portfolio {
 
 	.button {
 		line-height: 0.9;
-		padding-top: 0.3em;
+		padding-top: 0.3rem;
 
 		.multiline {
 			line-height: 0.9;
