@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		title: 'Ivanov Dmitriy - React / JavaScript developer',
+		title: 'Ivanov Dmitriy - React / Frontend developer',
 		author: 'Ivanov Dmitriy',
 		description: 'My web portfolio on Gatsby + Bulma.',
 		keywords: `React developer, React, Web, Developer, CSS, HTML, JS, Javascript, Gatsby, Web Developer, CSS3, SCSS, HTML5`,
