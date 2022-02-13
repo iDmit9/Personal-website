@@ -1,8 +1,8 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import Helmet from 'react-helmet';
+import { Helmet as ReactHelmet} from 'react-helmet';
 
-export default () => (
+const Helmet = () => (
 	<StaticQuery
 		query={graphql`
 			query helmetQuery {
@@ -17,7 +17,7 @@ export default () => (
 			}
 		`}
 		render={data => (
-			<Helmet>
+			<ReactHelmet>
 				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
@@ -32,7 +32,9 @@ export default () => (
 					itemprop="description"
 					content={data.site.siteMetadata.description}
 				/>
-			</Helmet>
+			</ReactHelmet>
 		)}
 	/>
 );
+
+export default Helmet;
