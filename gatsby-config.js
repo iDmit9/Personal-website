@@ -25,8 +25,9 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: 'Makefolio',
-				short_name: 'Makefolio',
+				name: 'React Portfolio',
+				short_name: 'Portfolio',
+        description: `React, Frontend, JavaScript web portfolio.`,
 				start_url: '/',
 				background_color: '#2980b9',
 				theme_color: '#2980b9',
@@ -36,17 +37,5 @@ module.exports = {
 			}
 		},
 		`gatsby-plugin-sass`,
-		{
-			resolve: `gatsby-plugin-google-analytics`,
-			options: {
-				trackingId: 'UA-XXXXXXXX-X',
-				// Setting this parameter is optional (requried for some countries such as Germany)
-				anonymize: true
-			}
-		},
-		`gatsby-plugin-sitemap`
-		// this (optional) plugin enables Progressive Web App + Offline functionality
-		// To learn more, visit: https://gatsby.app/offline
-		// 'gatsby-plugin-offline',
 	]
 };
