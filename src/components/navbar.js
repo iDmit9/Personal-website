@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
 
-import './style.scss';
-
 const Navbar = () => {
 	const [isActive, setIsActive] = useState(false);
 

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './style.scss';
 import Helmet from './helmet';
 import Header from './header';
 import About from './about';

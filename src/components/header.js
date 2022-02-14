@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useStaticQuery, graphql } from 'gatsby';
-import './style.scss';
 
 import Navbar from './navbar';
 

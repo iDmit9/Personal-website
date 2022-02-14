@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import '../components/style.scss'
+import '../style.scss'
 
 const NotFoundPage = () => (
   <section className='hero gradientBg is-fullheight'>    
