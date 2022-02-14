@@ -10,7 +10,8 @@ const About = () => (
                      <h2 className="title is-size-3 is-spaced">About</h2>
                      <p className="subtitle is-size-5 column has-text-left is-three-fifths is-offset-one-fifth">
                         
-                        Hello, I'm looking for a job as a Javascript/React developer with small experience.
+                        Hello, I'm looking for a job as a Frontend/React developer with small experience.
+                        I know well React and its surrounding technologies (Redux, JavaScript, HTML, CSS etc.). 
                         I practiced a lot not only React, but everything that can work with it:
                         Node, Express, Next, React Native, Gatsby, various serverless cloud solutions and APIs (AWS, Firebase, SendGrid, etc.). 
                         Part of my code can be viewed on GitHub.
