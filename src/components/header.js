@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaArrowDown } from 'react-icons/fa';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Navbar from './navbar';
@@ -20,7 +20,7 @@ const Header = () => {
 	return (
 			<section className='hero gradientBg is-fullheight'>
 				<Navbar />
-				<div className="container center">
+				<div className="container center is-flex-direction-column">
 					<article className="media">
 						<div className="media-content">
 							<div className="content has-text-centered">
@@ -51,11 +51,11 @@ const Header = () => {
 										</span>
 										&nbsp;
 								</div>
-
 							</div>
 						</div>
-					</article>
+					</article>					
 				</div>
+				<FaArrowDown className='icon-fa-2x arrow-down' color='black' />
 			</section>
 	)
 };
