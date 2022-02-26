@@ -50,8 +50,40 @@
 		
     transition: 0.3s linear;
     animation: scroll-arrow 1s infinite;
+	}	
+}
+
+.gradientBg {
+	display: flex;
+	background: linear-gradient(to right, $primary-color, $secondary-color);
+}
+
+.navbar {
+	.navbar-menu {
+		background: transparent;
+
+		.navbar-item {			
+			color: #4a4a4a;
+			border: none;			
+			background: transparent;
+
+			&:hover {
+				color: #2a2a2a;
+
+				&::after {
+					content: "";
+					position: absolute;
+					display: block;
+					bottom: 0.5em;
+					width: 50%;
+					height: 1px;
+					background: #2a2a2a;
+					-webkit-transition: all .3s;
+					transition: all .3s;
+				}
+			}
+		}
 	}
-	
 }
 
 .about {
@@ -218,19 +250,6 @@ section.portfolio {
 	}
 }
 
-.gradientBg {
-	display: flex;
-	background: linear-gradient(to right, $primary-color, $secondary-color);
-}
-
-.navbar-menu.is-active {
-	background: transparent;
-}
-
-.is-active .navbar-end :not(:last-child) {
-	border-bottom: 1px solid #888;
-}
-
 .center {
 	display: flex;
 	justify-content: center;
@@ -285,5 +304,21 @@ section.portfolio {
 		.container {
 			margin-right: 1.5rem;
 		}
+
+		.navbar-menu{			
+			.navbar-item{
+				&:hover {
+					color: #4a4a4a;
+
+					&::after {				
+						display: none;
+					}
+				}
+			}
+
+			:not(:last-of-type) {
+				border-bottom: 1px solid rgba(136, 136, 136, 0.5);
+			}
+		}
 	} 
- }
+}
