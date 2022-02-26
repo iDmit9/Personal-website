@@ -43,13 +43,11 @@ const Header = () => {
 												<FaLinkedin className='icon-fa-2x' color='black' />
 											</a>
 										</span>
-										&nbsp;
-           							 <span className='icon'>
+           					<span className='icon'>
 											<a href={data.site.siteMetadata.github}>
 											<FaGithub className='icon-fa-2x' color='black' /> 
 											</a>
 										</span>
-										&nbsp;
 								</div>
 							</div>
 						</div>
